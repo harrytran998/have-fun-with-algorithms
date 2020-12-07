@@ -1,0 +1,35 @@
+{
+  "name": "algorithms",
+  "version": "0.1.0",
+  "description": "This project is used to record usual algorithms implemented by JavaScript, TypeScript.",
+  "main": "index.js",
+  "repository": "https://github.com/lbwa/algorithms.git",
+  "author": "lbwa <32980314+lbwa@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "ts": "rm -rf dist/* && npx tsc",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.7",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0"
+  },
+  "dependencies": {
+    "typescript": "^3.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write"
+    ]
+  }
+}

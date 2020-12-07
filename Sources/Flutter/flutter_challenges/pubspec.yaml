@@ -1,0 +1,34 @@
+name: challenges
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # TODO: Remove
+  fast_noise:
+  google_fonts:
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    # - assets/apple.png
+    # - assets/flower_1.png
+    # - assets/flower_2.png
+    # - assets/flower_3.png
+    # - assets/watering_can.png
+    # - assets/water_drop.png
