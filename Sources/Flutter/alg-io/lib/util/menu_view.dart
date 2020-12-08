@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:algo_io_files/util/app_bar.dart';
 
-
 class MenuView extends StatelessWidget {
-
   final String _title;
   final List<String> _topics;
 
@@ -11,8 +9,6 @@ class MenuView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
       body: Column(
@@ -22,7 +18,6 @@ class MenuView extends StatelessWidget {
         ],
       ),
     );
-
   }
 
   Widget _buildTopics(BuildContext context) {
@@ -42,39 +37,27 @@ class MenuView extends StatelessWidget {
 
     return _topicsWidget;
   }
+
   void visitPage(BuildContext context, String directory) {
-
-    Navigator.pushNamed(context, ModalRoute.of(context).settings.name + directory);
-
+    Navigator.pushNamed(
+        context, ModalRoute.of(context).settings.name + directory);
   }
-
 
   Widget _buildRow(BuildContext context, String topic) {
     final bool isEmpty = topic.isEmpty;
     return ListTile(
       title: Text(
         topic,
-        style: Theme
-            .of(context)
-            .textTheme
-            .bodyText1,
+        style: Theme.of(context).textTheme.bodyText1,
       ),
-
       trailing: isEmpty
           ? null
           : Icon(
-        Icons.arrow_forward,
-        color: IconTheme.of(context).color,
-        size: IconTheme.of(context).size,
-      ),
+              Icons.arrow_forward,
+              color: IconTheme.of(context).color,
+              size: IconTheme.of(context).size,
+            ),
       onTap: () => visitPage(context, '/' + topic),
-
     );
   }
-
-
-
-
-
-
 }

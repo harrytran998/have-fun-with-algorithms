@@ -1,0 +1,22 @@
+name: flutter_maps_firestore
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.5.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore: ^0.13.5
+  google_maps_flutter: ^0.5.17
+  google_maps_webservice: ^0.0.14
+  location: ^3.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.9.0
+
+flutter:
+  uses-material-design: true
