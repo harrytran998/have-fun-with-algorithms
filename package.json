@@ -1,0 +1,34 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/harrytran998/typescript-basic-alogorithms-data-structure.git",
+  "author": "Harry Tran <nhattq.coding@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint --ext .ts packages/*/src/**",
+    "format": "prettier --write --parser typescript \"packages/**/*.ts?(x)\"",
+    "preinstall": "node scripts/checkPnpm.js"
+  },
+  "gitHooks": {
+    "pre-commit": "ls-lint && lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "devDependencies": {
+    "@ls-lint/ls-lint": "^1.9.2",
+    "@types/jest": "^26.0.19",
+    "chalk": "^4.1.0",
+    "husky": "^4.3.5",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
+  }
+}

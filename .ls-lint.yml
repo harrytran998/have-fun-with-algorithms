@@ -1,0 +1,12 @@
+ls:
+  .ts: PascalCase | point.case
+  .spec.ts: point.case
+
+
+ignore:
+  - node_modules
+  - dist
+  - .git
+  - .github
+  - .vscode
+  - .local
