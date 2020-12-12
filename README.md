@@ -1,1 +1,1 @@
-📝 Algorithms and data structures implemented in Javascript, Typescript, Flutter, and maybe GO - base on multiple repo.
+📝 Learn Algorithms and data structures with Typescript
